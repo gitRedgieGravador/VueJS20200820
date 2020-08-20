@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+    />
+  </head>
+  <style>
+    .centered {
+      justify-content: center !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      display: flex !important;
+      height: 100vh !important;
+    }
+  </style>
+  <body>
+    <div id="app">
+      <div>
+        <div class="centered">
+          <v-card outlined class="text-center" width="350" height="350">
+            {{ sms }}
+          </v-card>
+        </div>
+      </div>
+      <!-- <v-app>
+        <v-main>
+          <v-container fluid fill-height>
+            <v-layout align-center justify-center>
+              <v-flex class="l-25">
+                <v-card outlined class="text-center" width="350" height="350">
+                  {{ sms }}
+                </v-card>
+              </v-flex>
+            </v-layout>
+          </v-container>
+        </v-main>
+      </v-app> -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
